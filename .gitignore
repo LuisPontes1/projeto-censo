@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data - Ignore raw and silver, but keep gold for LFS
+data/raw/
+data/silver/
+data/bronze/
+*.zip
+*.csv
+*.xlsx
+
+# Allow Gold Parquet (Final Dataset)
+!data/gold/
+!data/gold/*.parquet
+
+# Logs
+*.log

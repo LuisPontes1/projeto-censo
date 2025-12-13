@@ -1,0 +1,11 @@
+pandas
+geopandas
+duckdb
+requests
+pyarrow
+shapely
+geobr
+matplotlib
+jupyter
+tqdm
+fsspec
