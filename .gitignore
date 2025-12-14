@@ -14,13 +14,21 @@ env/
 data/raw/
 data/silver/
 data/bronze/
+# data/processed/ -> Comentado para permitir upload via LFS
 *.zip
 *.csv
 *.xlsx
+# *.parquet -> Comentado pois já está no .gitattributes
+
+# Large Data Files (>100MB) - Managed by LFS
+# data/spatial/malha_setores_2022_final.parquet
+# data/diamond/censo_2022_diamond_features_final.parquet
 
 # Allow Gold Parquet (Final Dataset)
 !data/gold/
 !data/gold/*.parquet
+!data/spatial/*.parquet
+!data/diamond/*.parquet
 
 # Logs
 *.log
